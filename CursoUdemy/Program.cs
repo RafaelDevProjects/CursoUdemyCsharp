@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Diagnostics.CodeAnalysis;
 using System.Linq;
+using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -147,8 +148,135 @@ namespace CursoUdemy
 
             #region List
 
-            List<string> list = new List<string>(); // instanciando uma lista
-            list.Add("rafael"); // adicionando item na lista
+            //List<string> list = new List<string>(); // instanciando uma lista
+            //list.Add("rafael"); // adicionando item na lista
+            //list.Add("rafaela");
+            //list.Add("Mauricio");
+            //list.Add("Carlinhos");
+            //list.Add("Patricia");
+
+
+            //list.Insert(1, "Marcos"); // adiciona item no index
+            //Console.WriteLine($"Numero de pessoas na lista: {list.Count()}"); // mostra quantos items tem na lista
+
+
+            //foreach (var item in list)
+            //{
+            //    Console.WriteLine(item); // vai mostrar cada item da lista
+            //}
+
+            //string s1 = list.Find(a => a.StartsWith("r")); // encontra o primeiro nome da lista que começa com a letra "r"
+            //string s2 = list.Find(a => a.EndsWith("s")); // encontra o primeiro nome da lista que termina com a letra "s"
+            //string s3 = list.Find(a => a.Equals("rafael")); // encontra o primeiro nome da lista que seja igual a "rafael"
+
+            //string s4 = list.FindLast(a => a.StartsWith("r")); // encontra o ultimo nome da lista que comece com a letra 'r'
+
+            //int pos1 = list.FindIndex(a => a.StartsWith("r")); // encontra o indice do primeiro nome que começa com "r"
+            //int pos2 = list.FindLastIndex(a => a.StartsWith("r")); // encontra o indice do ultimo nome que começa com "r"
+
+            //List<string> list2 = list.FindAll(a => a.Length >= 5); // filtra a lista original em uma outra lista, o filtro é para todos os nome com mais de 5 caracteres ou igual
+
+            //Console.WriteLine("-------------------------------------------------");
+            //Console.WriteLine($"Primeiro nome da lista que começa com 'r': {s1}");
+            //Console.WriteLine($"Primeiro nome da lista que termina com 's': {s2}");
+            //Console.WriteLine($"Primeiro nome da lista que seja igual a 'rafael': {s3}");
+            //Console.WriteLine($"Ultimo nome da lista que começa com 'r': {s4}");
+            //Console.WriteLine($"Indice do primeiro nome da lista que começa com 'r': {pos1}");
+            //Console.WriteLine($"Indice do ultimo nome da lista que começa com 'r': {pos2}");
+
+            //Console.WriteLine("-------------------------------------------------");
+            //Console.WriteLine("Lista filtrada com nomes com mais de 5 caractéres");
+            //foreach (var item in list2)
+            //{
+            //    Console.WriteLine(item);
+            //}
+
+            //Console.WriteLine("-------------------------------------------------");
+            //Console.WriteLine("Lista usando o Remove para remover o nome Marcos");
+            //list.Remove("Marcos"); // remove o "Marcos"
+            //foreach (var item in list)
+            //{
+            //    Console.WriteLine(item); // vai mostrar cada item da lista
+            //}
+
+            //Console.WriteLine("-------------------------------------------------");
+            //Console.WriteLine("Lista usando o RemoveAt para remover o nome na posição 1");
+            //list.RemoveAt(1); // remove o nome da pessoa que esta na posição 2
+            //foreach (var item in list)
+            //{
+            //    Console.WriteLine(item); // vai mostrar cada item da lista
+            //}
+
+
+            //Console.WriteLine("-------------------------------------------------");
+            //Console.WriteLine("Lista usando o RemoveAll para remover todos os nome com a letra 'r'");
+            //list.RemoveAll(a => a.StartsWith("r")); // Remove todos que tem a letra "r"
+
+            //foreach (var item in list)
+            //{
+            //    Console.WriteLine(item); // vai mostrar cada item da lista
+            //}
+
+            //Console.WriteLine("-------------------------------------------------");
+            //Console.WriteLine("Lista usando o Remove para remover um range de 2 pessoas a partir da posição 1");
+            //list.RemoveRange(1, 2); // remove apartir da posição 1, ele remove 1 elemento
+            //foreach (var item in list)
+            //{
+            //    Console.WriteLine(item); // vai mostrar cada item da lista
+            //}
+
+
+
+            #endregion
+
+            #region List Exercicio de Fixação
+
+            //List<Funcionario> funcionarios = new List<Funcionario>();
+
+            //Console.Write("Numero de funcionarios: ");
+            //int n = int.Parse(Console.ReadLine());
+
+
+            //for (int i = 0; i < n; i++)
+            //{
+            //    Console.Write("ID: ");
+            //    int id = int.Parse(Console.ReadLine());
+
+            //    Console.Write("Nome: ");
+            //    string nome = Console.ReadLine();
+
+            //    Console.Write("Salario: ");
+            //    double salario = double.Parse(Console.ReadLine());
+
+            //    Funcionario funcionario = new Funcionario(nome, salario, id);
+            //    funcionarios.Add(funcionario);
+
+            //    Console.WriteLine();
+
+            //}
+
+            //Console.WriteLine("Aumento de salario ");
+            //Console.Write("ID do funcionario: ");
+            //int ID = int.Parse(Console.ReadLine());
+
+            //Funcionario fun = funcionarios.Find(a => a.Id == ID);
+            //if (fun != null)
+            //{
+            //    Console.Write("Qual é a pocentagem: ");
+            //    double porcentagem = double.Parse(Console.ReadLine());
+            //    fun.AumentarSalario(porcentagem);
+            //}
+            //else
+            //{
+            //    Console.WriteLine("Esse ID não existe");
+            //}
+
+            //Console.WriteLine();
+            //Console.WriteLine("Lista de funcionarios: ");
+            //foreach (Funcionario obj in  funcionarios)
+            //{
+            //    Console.WriteLine(obj.ToString());
+            //}
 
             #endregion
         }
