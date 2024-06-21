@@ -279,6 +279,67 @@ namespace CursoUdemy
             //}
 
             #endregion
+
+            #region Matriz
+
+            double[,] myMat = new double[2, 3]; // inicializando uma matriz, essa matriz sera de 2 linhas e 3 colunas
+
+            Console.WriteLine(myMat.Length); // mostra quantos elementos a mtriz tem no total
+
+            Console.WriteLine(myMat.Rank); // mostra a quantidade de linhas de matriz
+
+            Console.WriteLine(myMat.GetLength(1)); // mostra a quantidade de colunas da matriz
+
+            Console.Write("type it a order to matrix: ");
+            int N = int.Parse(Console.ReadLine());
+
+            int[,] matrix = new int[N, N];
+
+            for (int i = 0; i < N; i++)
+            {
+                string[] values = Console.ReadLine().Split(' '); // faz com que a linha vire uma lista com os seus valores
+
+                for (int j = 0; j < N; j++)
+                {
+                    matrix[i, j] = int.Parse(values[j]); // trasforma os numeros de string para int e depois adiciona o numero na posição
+                }
+            }
+
+            Console.WriteLine("Diagononal numbers in matrix: ");
+            for (int i = 0; i < N; i++)
+            {
+                Console.Write($"{matrix[i, i]} "); // faz com que a pareça no console a diagonal da matriz, a diagonal principal tem os indices sempre iguais
+            }
+
+            Console.WriteLine();
+
+            int negativeNubers = 0;
+            for (int i = 0; i < N; i++)
+            {
+                for (int j = 0; j < N; j++)
+                {
+                    if (matrix[i, j] < 0)  // identifica se a matriz tem números negativos
+                    {
+                        negativeNubers++;
+                    }
+                }
+            }
+            Console.WriteLine($"The matrix have {negativeNubers} negative numbers");
+
+
+            Console.WriteLine("Complete Matrix");
+            for (int i = 0; i < N; i++)
+            {
+                for (int j = 0; j < N; j++)
+                {
+                    Console.Write($"{matrix[i, j]} "); // faz com que a matriz apareça no console
+                }
+                Console.WriteLine();
+            };
+
+
+
+            #endregion
         }
     }
 }
