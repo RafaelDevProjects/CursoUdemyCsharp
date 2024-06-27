@@ -1,10 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Diagnostics.CodeAnalysis;
-using System.Linq;
-using System.Security.Cryptography;
-using System.Text;
-using System.Threading.Tasks;
+
+using System.Globalization;
 
 namespace CursoUdemy
 {
@@ -282,64 +278,120 @@ namespace CursoUdemy
 
             #region Matriz
 
-            double[,] myMat = new double[2, 3]; // inicializando uma matriz, essa matriz sera de 2 linhas e 3 colunas
+            //double[,] myMat = new double[2, 3]; // inicializando uma matriz, essa matriz sera de 2 linhas e 3 colunas
 
-            Console.WriteLine(myMat.Length); // mostra quantos elementos a mtriz tem no total
+            //Console.WriteLine(myMat.Length); // mostra quantos elementos a mtriz tem no total
 
-            Console.WriteLine(myMat.Rank); // mostra a quantidade de linhas de matriz
+            //Console.WriteLine(myMat.Rank); // mostra a quantidade de linhas de matriz
 
-            Console.WriteLine(myMat.GetLength(1)); // mostra a quantidade de colunas da matriz
+            //Console.WriteLine(myMat.GetLength(1)); // mostra a quantidade de colunas da matriz
 
-            Console.Write("type it a order to matrix: ");
-            int N = int.Parse(Console.ReadLine());
+            //Console.Write("type it a order to matrix: ");
+            //int N = int.Parse(Console.ReadLine());
 
-            int[,] matrix = new int[N, N];
+            //int[,] matrix = new int[N, N];
 
-            for (int i = 0; i < N; i++)
-            {
-                string[] values = Console.ReadLine().Split(' '); // faz com que a linha vire uma lista com os seus valores
+            //for (int i = 0; i < N; i++)
+            //{
+            //    string[] values = Console.ReadLine().Split(' '); // faz com que a linha vire uma lista com os seus valores
 
-                for (int j = 0; j < N; j++)
-                {
-                    matrix[i, j] = int.Parse(values[j]); // trasforma os numeros de string para int e depois adiciona o numero na posição
-                }
-            }
+            //    for (int j = 0; j < N; j++)
+            //    {
+            //        matrix[i, j] = int.Parse(values[j]); // trasforma os numeros de string para int e depois adiciona o numero na posição
+            //    }
+            //}
 
-            Console.WriteLine("Diagononal numbers in matrix: ");
-            for (int i = 0; i < N; i++)
-            {
-                Console.Write($"{matrix[i, i]} "); // faz com que a pareça no console a diagonal da matriz, a diagonal principal tem os indices sempre iguais
-            }
+            //Console.WriteLine("Diagononal numbers in matrix: ");
+            //for (int i = 0; i < N; i++)
+            //{
+            //    Console.Write($"{matrix[i, i]} "); // faz com que a pareça no console a diagonal da matriz, a diagonal principal tem os indices sempre iguais
+            //}
 
-            Console.WriteLine();
+            //Console.WriteLine();
 
-            int negativeNubers = 0;
-            for (int i = 0; i < N; i++)
-            {
-                for (int j = 0; j < N; j++)
-                {
-                    if (matrix[i, j] < 0)  // identifica se a matriz tem números negativos
-                    {
-                        negativeNubers++;
-                    }
-                }
-            }
-            Console.WriteLine($"The matrix have {negativeNubers} negative numbers");
+            //int negativeNubers = 0;
+            //for (int i = 0; i < N; i++)
+            //{
+            //    for (int j = 0; j < N; j++)
+            //    {
+            //        if (matrix[i, j] < 0)  // identifica se a matriz tem números negativos
+            //        {
+            //            negativeNubers++;
+
+            //        }
+            //    }
+            //}
+            //Console.WriteLine($"The matrix have {negativeNubers} negative numbers");
+
+            //Console.WriteLine("Complete Matrix");
+            //for (int i = 0; i < N; i++)
+            //{
+            //    for (int j = 0; j < N; j++)
+            //    {
+            //        Console.Write($"{matrix[i, j]} "); // faz com que a matriz apareça no console
+            //    }
+            //    Console.WriteLine();
+            //};
+            #endregion
+
+            #region Topicos especiais
+
+            //// DateTime
+            //DateTime d1 = new DateTime(2023, 6, 25); // criar uma nova data na data especificado
+            //DateTime d2 = new DateTime(2023, 6, 25, 20, 14, 2); // criar uma nova data com data e hora especificados
+            //DateTime d3 = new DateTime(2023, 6, 25, 20, 13, 2, 500); // cria uma nova data e hora com milisegundos especificados
+
+            //DateTime d4 = DateTime.Now; // cria uma data com data e horario que estão na sua maquina
+            //DateTime d5 = DateTime.Today; // cria a data de "hoje", sem horario
+            //DateTime d6 = DateTime.UtcNow; // cria a data no horario universal, sem fuso horario.
+            //DateTime d7 = DateTime.Parse("15/06/2004"); // transforma o texto em data
+            //DateTime d8 = DateTime.ParseExact("2000-08-12", "yyyy-MM-dd", CultureInfo.InvariantCulture); //faz a transformação exata com modelo
+
+            //DateTime d9 = new DateTime(2023, 6, 25, 20, 14, 2, DateTimeKind.Local); // usa o DateTimeKind para usar o tipo de datetime da sua maquina
+            //DateTime d10 = new DateTime(2023, 6, 25, 20, 14, 2, DateTimeKind.Utc); // usa o DateTimeKind para usar o tipo de datetime Utc
 
 
-            Console.WriteLine("Complete Matrix");
-            for (int i = 0; i < N; i++)
-            {
-                for (int j = 0; j < N; j++)
-                {
-                    Console.Write($"{matrix[i, j]} "); // faz com que a matriz apareça no console
-                }
-                Console.WriteLine();
-            };
+            //Console.WriteLine(d1);
+            //Console.WriteLine(d2);
+            //Console.WriteLine(d3);
+            //Console.WriteLine(d4);
+            //Console.WriteLine(d5); 
+            //Console.WriteLine(d6);
+            //Console.WriteLine(d7);
+            //Console.WriteLine(d8);
+
+            //Console.WriteLine();
+
+            //Console.WriteLine("d9: " + d9);
+            //Console.WriteLine("d9 Kind: " + d9.Kind);
+            //Console.WriteLine("d9 to Local: " + d9.ToLocalTime());
+            //Console.WriteLine("d9 to Utc: " + d9.ToUniversalTime()); // ele ira mostrar o horario universal, sem o fuso horario local
+
+            //Console.WriteLine();
 
 
+            ////TimeSpan
+            //TimeSpan t1 = new TimeSpan(0, 1, 30); // cria um TimeSpan de 1 minuto e 30 segundos 
+            //TimeSpan t2 = new TimeSpan(1, 10, 3, 10); // Dia, Hora, Minuto, Segundo
+            //TimeSpan t3 = new TimeSpan(1,2, 11, 21, 100); // Dia, Hora, Minuto, Segundo, milisegundos
+
+            //TimeSpan sum = t1.Add(t2); // soma dos dois time span
+            //TimeSpan dif = t1.Subtract(t2); ;// suntrai o time span
+
+            //Console.WriteLine(t1);
+            //Console.WriteLine(t2);
+            //Console.WriteLine(t3);
+            //Console.WriteLine(sum);
+            //Console.WriteLine(dif);
 
             #endregion
+
+            #region Enumerations (Enum)
+
+            #endregion
+
         }
+
+
     }
 }
