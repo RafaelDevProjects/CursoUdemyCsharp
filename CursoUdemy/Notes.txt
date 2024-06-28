@@ -1,0 +1,7 @@
+ # Categorias de Classe (design)
+
+ - Views: telas do sistema
+ - Controllers: Controladores (meio de campo entre a tela e o sistema)
+ - Entities: Entidades de negocio como produtos, cliente, etc...
+ - Sevices: Representam servisos
+ - Repositories: Classes responsaveis por acessar um banco de dados
