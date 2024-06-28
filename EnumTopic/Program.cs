@@ -1,5 +1,6 @@
-﻿using CourseEnum.Entities;
-using CourseEnum.Entities.Enums;
+﻿
+using TopicEnum.Entities;
+using EnumTopic.Entities.Enums;
 using System;
 
 namespace CourseEnum
@@ -21,6 +22,7 @@ namespace CourseEnum
 
             OrderStatus os = (OrderStatus)Enum.Parse(typeof(OrderStatus), "Delivered");
 
+            Console.WriteLine(os);
             Console.WriteLine(txt);
         }
     }

@@ -5,7 +5,7 @@ VisualStudioVersion = 17.10.35004.147
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CursoUdemy", "CursoUdemy\CursoUdemy.csproj", "{AF903124-1597-499F-8050-36837800A078}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Enum", "Enum\Enum.csproj", "{F4D723F8-08D7-4BC3-8B2A-EB5D0CD16740}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EnumTopic", "EnumTopic\EnumTopic.csproj", "{A3BAE049-E19B-4D9D-92D0-786212121DEA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,10 +17,10 @@ Global
 		{AF903124-1597-499F-8050-36837800A078}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AF903124-1597-499F-8050-36837800A078}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AF903124-1597-499F-8050-36837800A078}.Release|Any CPU.Build.0 = Release|Any CPU
-		{F4D723F8-08D7-4BC3-8B2A-EB5D0CD16740}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{F4D723F8-08D7-4BC3-8B2A-EB5D0CD16740}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{F4D723F8-08D7-4BC3-8B2A-EB5D0CD16740}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{F4D723F8-08D7-4BC3-8B2A-EB5D0CD16740}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A3BAE049-E19B-4D9D-92D0-786212121DEA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A3BAE049-E19B-4D9D-92D0-786212121DEA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A3BAE049-E19B-4D9D-92D0-786212121DEA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A3BAE049-E19B-4D9D-92D0-786212121DEA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

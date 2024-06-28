@@ -385,11 +385,6 @@ namespace CursoUdemy
             //Console.WriteLine(dif);
 
             #endregion
-
-            #region Enumerations (Enum)
-
-            #endregion
-
         }
 
 
