@@ -1,0 +1,9 @@
+# Inheritance and Polymorphism
+
+Inheritance: A herança é um tipo de associação que permite que uma classe Herde dados e comportamentos de outra
+Sintaxe: 
+- `:` (estende)
+- `Base` (referencia para super classe)
+
+
+o protected serve para dar acesso apinas para as subclasses dentro e fora do assembly
