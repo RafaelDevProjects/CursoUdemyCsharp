@@ -3,5 +3,8 @@
  - Views: telas do sistema
  - Controllers: Controladores (meio de campo entre a tela e o sistema)
  - Entities: Entidades de negocio como produtos, cliente, etc...
- - Sevices: Representam servisos
+ - Sevices: Representam serviços, como CRUD, Serviço de Email, Serviço de pedido, Serviço de autenticação, etc..
  - Repositories: Classes responsaveis por acessar um banco de dados
+
+ # Composição
+ Um tipo de associação que permite que um objeto contenha outro.
