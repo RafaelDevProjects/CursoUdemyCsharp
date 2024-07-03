@@ -1,9 +1,30 @@
 # Inheritance and Polymorphism
 
-Inheritance: A herança é um tipo de associação que permite que uma classe Herde dados e comportamentos de outra
+
+## Inheritance: A herança é um tipo de associação que permite que uma classe Herde dados e comportamentos de outra
 Sintaxe: 
 - `:` (estende)
 - `Base` (referencia para super classe)
 
-
 o protected serve para dar acesso apinas para as subclasses dentro e fora do assembly
+
+Upcasting: Casting da subclasse para a superclasse, uso comum no polimorfismo
+Downcasting: Casting da superclasse para subclasse
+tradução: Casting = Fundação
+
+Sobreposição: É a implementação de um método de uma superclasse na subclasse
+- Para que um método comum (não abstrato) possa ser sobreposto, deve ser incluido nele o prefixo "virtual"
+- Ao sobrescrever um método, devemos incluir nele o prefixo "orverride"
+
+Classes e Métodos selados
+- Palavra chave: sealed
+Classe: Evita que a classe seja herdada
+Método: Evita que um método sobreposto possa ser sobreposto novamente (só pode ser aplicado a métodos sobrepostos)
+
+
+
+
+## Polymorphism: polimosrfismo é recurso que permite que variáveis de um mesmo tipo mais genérico possam apontar para objetos de tipos 
+específicos diferentes, tendo assim comportamentos diferentes conforme cada tipo específico.
+
+
