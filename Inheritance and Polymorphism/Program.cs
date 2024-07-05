@@ -1,9 +1,7 @@
 ﻿using Inheritance_and_Polymorphism.Entities;
 using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.Globalization;
 
 namespace Inheritance_and_Polymorphism
 {
@@ -45,14 +43,60 @@ namespace Inheritance_and_Polymorphism
             #endregion
 
             #region Superposition (Sobreposição)
-            Account acc1 = new Account(1001, "Alex", 500.0);
-            Account acc2 = new SavingsAccount(1002, "Anna", 500.0, 0.01);
+            //Account acc1 = new Account(1001, "Alex", 500.0);
+            //Account acc2 = new SavingsAccount(1002, "Anna", 500.0, 0.01);
 
-            acc1.Withdraw(10.0);
-            acc2.Withdraw(10.0);
+            //acc1.Withdraw(10.0);
+            //acc2.Withdraw(10.0);
 
-            Console.WriteLine(acc1.Balance); // na conta comum sera cobrada uma taxa de 5.00
-            Console.WriteLine(acc2.Balance); // na conta SavingAccount não terá taxa
+            //Console.WriteLine(acc1.Balance); // na conta comum sera cobrada uma taxa de 5.00
+            //Console.WriteLine(acc2.Balance); // na conta SavingAccount não terá taxa
+            #endregion
+
+
+            #region Exercicio de Fixação
+
+            Console.Write("Enter the number of employees: ");
+            int N = int.Parse(Console.ReadLine());
+            Console.WriteLine();
+            List<Employee> employees = new List<Employee>(); // Lista de Employee que aceita o objeto Employee e o Objeto OutsourceEmployee
+
+            for (int i = 0; i < N; i++)
+            {
+                Console.WriteLine($"Employee #{i + 1} data: ");
+
+                Console.Write("Outsourced (y/n)? ");
+                char outsourced = char.Parse(Console.ReadLine());
+                Console.Write("Name: ");
+                string name = Console.ReadLine();
+                Console.Write("Hours: ");
+                int hours = int.Parse(Console.ReadLine());
+                Console.Write("Value per hour: ");
+                double valuePerHour = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+
+                if (outsourced == 'y')
+                {
+                    Console.Write("Addictional charge: ");
+                    double addictionalCharge = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+                    Employee employee = new OutsourcedEmployee(name, hours, valuePerHour, addictionalCharge);
+                    employees.Add(employee);
+                }
+                else
+                {
+                    Employee employee = new Employee(name, hours, valuePerHour);
+                    employees.Add(employee);
+                }
+
+            }
+
+            Console.WriteLine();
+            Console.WriteLine("PAYMENTS:");
+            foreach (var employee in employees)
+            {
+                Console.WriteLine(employee.Name + " - $" + employee.Payment().ToString("F2", CultureInfo.InvariantCulture));
+            }
+
+
             #endregion
         }
     }
