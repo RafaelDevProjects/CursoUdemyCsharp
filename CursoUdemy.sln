@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EnumTopic", "EnumTopic\Enum
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Inheritance and Polymorphism", "Inheritance and Polymorphism\Inheritance and Polymorphism.csproj", "{9F1D3285-D579-4F51-8531-306D52E357B6}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExceptionHandling", "ExceptionHandling\ExceptionHandling.csproj", "{6A6B18F8-6902-454B-845A-3988014DCF32}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{9F1D3285-D579-4F51-8531-306D52E357B6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9F1D3285-D579-4F51-8531-306D52E357B6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9F1D3285-D579-4F51-8531-306D52E357B6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6A6B18F8-6902-454B-845A-3988014DCF32}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6A6B18F8-6902-454B-845A-3988014DCF32}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6A6B18F8-6902-454B-845A-3988014DCF32}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6A6B18F8-6902-454B-845A-3988014DCF32}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

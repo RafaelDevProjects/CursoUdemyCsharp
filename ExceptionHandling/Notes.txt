@@ -1,0 +1,15 @@
+# ExceptionHamdling
+
+## Exeções: Uma exceção é qualquer condição de erro ou comportamento inesperado encontrado por um programa em execução
+- No .NET, uma exceção é um objeto herdado da classe System.Exception
+- Quando lançada, uma exceção é propagada na pilha de chamadas de métodos em execução, até que seja capturada(tratada) ou o programa seja encerrado
+
+Estrutura try-catch:
+- Bloco try
+	- Contém o código que representa a execução normal do trecho de código que pode acarretar em uma exceção
+- Bloco catch
+	- Comtém o código a ser executado caso uma exceção ocorra
+	- Deve ser especificado o tipo da exceção a ser tratada (upcasting é permitido)
+
+Bloco Finally: é um bloco que contém código a ser executado independente de ter ocorrido ou não uma exceção
+- Exemplo clássico: fechar um arquivo ou conexão de banco de dados ao final do processamento.
